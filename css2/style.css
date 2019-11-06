@@ -50,6 +50,17 @@ p{
     padding-top:2%;
 }
 
+#detail img{
+    float: right;
+
+}
 #caption{
     color:white; 
+    text-align:left;
+    font-size:1em;
+}
+#title{
+    text-align:center;
+    color:gold;
+    font-size:3em;
 }
