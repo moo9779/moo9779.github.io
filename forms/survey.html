@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style >
+            body {
+            font-size: 1.3em;
+            background-color: beige;
+
+            }
+            content{
+            width:90%;
+            margin:auto;
+            }
+
+            h1 {
+            text-align:center;
+            }
+
+            form {
+            margin-left:5%;
+            }
+            input {
+            margin-bottom:2%;
+            }
+            input#submit {
+            display:block;
+            background-color:#33ff99;
+            font-weight:bold;
+            padding: 20px;
+            font-size: 1.5em;
+            }
+
+            select option {
+            font-size: 1.75em;
+            width: 150px;
+            }
+
+    </style>
+</head>
+<body>
+       <div>
+            <form action = "https://idesstage2.bc.edu/class/results.php" method = "Post" target="_blank">
+                <h1><b>Personal Music Information</b></h1>
+                <b>First name:</b><br>
+                <input type="text" name="firstname" required><br>
+                <b>Last name:</b><br>
+                <input type="text" name="lastname" required><br>
+                <b>Email:</b><br>
+                <input type="email" name="emailaddress" required><br>
+                <b>What Role does Music Play in your Life?</b><br>
+                <textarea name="message" rows="3" cols="60" overflow = "scroll"></textarea><br>
+                <fieldset>
+                    <legend><b>Please select your favorite type of music:</b><br></legend>
+                    <input type="radio" name="type" value="Pop"> Pop<br>
+                    <input type="radio" name="type" value="Classical"> Classical<br>
+                    <input type="radio" name="type" value="Rock"> Rock<br>
+                    <input type="radio" name="type" value="Rap"> Rap<br>
+                    <input type="radio" name="type" value="Other"> Other<br>      
+                </fieldset>
+                <fieldset>
+                    <legend><b>How often do you listen to music?</b><br></legend>
+                    <input type="checkbox" name="time1" value="Daily"> Daily<br>
+                    <input type="checkbox" name="time2" value="Weekly"> Weekly<br>
+                    <input type="checkbox" name="time3" value="Monthly"> Monthly<br>
+                    <input type="checkbox" name="time4" value="Never"> Never<br>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Where do you listen to music?</b><br></legend>
+                    <select name="Where">
+                        <option value="Gym">Gym</option>
+                        <option value="Work">Work</option>
+                        <option value="School">School</option>
+                        <option value="Studying">Studying</option>
+                        <option value="Home">Home</option>
+                        <option value="Other">Other</option>
+                      </select><br>  
+                    </fieldset>
+                  <input id="submit" type="submit" value="Submit">
+                </fieldset>
+            </form >
+       </div>
+</body>
+</html>
