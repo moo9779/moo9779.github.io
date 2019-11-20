@@ -38,7 +38,7 @@
         
         function myConfirmation(){
             var name = document.getElementById("name").value;
-            window.alert("Hey "+ name + ", you've really done it now, you are going to be redirected to a sketchy site!");
+            alert("Hey "+ name + ", you've really done it now, you are going to be redirected to a sketchy site!");
             return;
         }
         
@@ -50,11 +50,11 @@
 </head>
 <body onload ="myPageLoad()">
        <div>
-            <form action = "https://idesstage2.bc.edu/class/results.php" method = "Post" target="_blank">
+            <form action = "https://idesstage2.bc.edu/class/results.php" method = "Post" onSubmit = "myConfirmation()" target="_blank">
                 <fieldset>
                 <legend><b>Personal information:</b></legend>
                 <b>First name:</b><br>
-                <input type="text" name="firstname"><br>
+                <input type="text" name="firstname" id="name"><br>
                 <b>Last name:</b><br>
                 <input type="text" name="lastname"><br>
                 <b>Email:</b><br>
