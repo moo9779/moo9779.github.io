@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- <meta charset="utf-8"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Top 11 Major US Battles</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.page ul{
+    width:100%;
+    padding-left:0%;
+    
+}
+.page li{
+    list-style: square;
+}
+.page b{
+    color:goldenrod; 
+}
+
+</style>
+</head>
+
+<body>
+<!-- <div id="banner"><h1>Battle of Lexington and Concord</h1></div> -->
+<div class = "sidenav" id="nav">
+        <ul>
+            <li><a href="index.html" target="new" text="Home">
+                Home</a>
+            </li>
+            <li><a href="battle1.html" target="new" text="Battle 1">
+                Battle 1</a>
+            </li>
+            <li><a href="battle2.html" target="new" text="Battle 2">
+               Battle 2</a>
+            </li>
+            <li><a href="battle3.html" target="new" text="Battle 3">
+                Battle 3</a>
+            </li>
+            <li><a href="battle4.html" target="new" text="Battle 4">
+                Battle 4</a>
+            </li>
+            <li><a href="battle5.html" target="new" text="Battle 5">
+                Battle 5</a>
+            </li>
+            <li><a href="battle6.html" target="new" text="Battle 6">
+                Battle 6</a>
+            </li>
+            <li><a href="battle7.html" target="new" text="Battle 7">
+                Battle 7</a>
+            </li>
+            <li><a href="battle8.html" target="new" text="Battle 8">
+                Battle 8</a>
+            </li>
+            <li><a href="battle9.html" target="new" text="Battle 9">
+                Battle 9</a>
+            </li>
+            <li><a href="battle10.html" target="new" text="Battle 10">
+                Battle 10</a>
+            </li>
+            <li><a href="battle11.html" target="new" text="Battle 11">
+                    Battle 11</a>
+                </li>
+            <li><a href="survey.html" target="new" text="Survey">
+                    Survey</a>
+            </li>
+        </ul> 
+    </div>
+<div id="detail">
+<!-- <h2 id="title">Survey</h2> -->
+
+<div class= "page" id="caption">
+        <form action = "https://idesstage2.bc.edu/class/results.php" method = "Post" onSubmit = "myConfirmation()" target="_blank">
+            <fieldset>
+            <legend id="title" style="font-size:2em"><b>Feedback on this Site</b></legend>
+            <b>First name:</b><br>
+            <input type="text" name="firstname" id="name"><br>
+            <b>Last name:</b><br>
+            <input type="text" name="lastname"><br>
+            <b>Email:</b><br>
+            <input type="email" name="emailaddress" required><br>
+            <legend><b>Was this Website Helpful?</b><br></legend>
+            <input type="radio" name="type" value="Yes"> Yes<br>
+            <input type="radio" name="type" value="No"> No<br>
+            <b>Favorite Battle</b><br>
+            <select name="Battle Name">
+                <option value="1">Battle Lexington and Concord</option>
+                <option value="2">Battle of Bunker Hill</option>
+                <option value="3">Siege of Yorktown</option>
+                <option value="4">Battle of the Alamo</option>
+                <option value="5">Battle of Fort Sumter</option>
+                <option value="6">Battle of Gettysburg</option>
+                <option value="7">Second Battle of the Marne</option>
+                <option value="8">Attack on Pearl Harbor</option>
+                <option value="9">Battle of Midway</option>
+                <option value="10">Normandy Invasion</option>
+                <option value="11">Tet Offensive</option>
+              </select><br>
+              <b>Any Extra Comments?</b><br>
+              <textarea name="message" style="width:200px; height:100px;"></textarea><br>
+              <b>Please Rate this Website (1=lowest; 10=highest)</b><br>
+
+                    <input type="range" name="range" min="1" max="10" onchange="showValue(this.value)" value=this.valueAsNumber>
+                    <div id="range"> 5 </div>
+                   <script>
+                        function showValue(newValue)
+                        {
+                        document.getElementById("range").innerHTML=newValue;
+                        }
+                    </script>
+
+              <input id="submit" type="submit" value="Submit">
+            </fieldset>
+            
+        </form >
+        
+
+</div>
+
+</div>
+
+<div id="footer">
+	<hr>&copy;2019 ADIT1340 Boston College, Byungmoo Brian Kim
+</div>
+</body>
+</html>
