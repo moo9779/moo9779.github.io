@@ -33,9 +33,9 @@ body{
 .sidenav a:hover {
     background-color: blue;
   }
-.sidenav  a:link {
+/* .sidenav  a:link {
     background-color: gray;
-  }
+  } */
 .sidenav a:active {
     background-color: black;
   }  
