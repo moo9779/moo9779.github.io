@@ -10,7 +10,7 @@ body{
     top: 0; /* Stay at the top */
     left: 0;
     background-color: black; /* Black */
-    background-color: #962626;
+    background-color: gold;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
     padding-left: 0px;
@@ -20,7 +20,7 @@ body{
     
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: gold;
     display: block;
     text-align: center;
   }
@@ -34,7 +34,7 @@ body{
     background-color: blue;
   }
  .sidenav  a:link {
-    background-color: gold;
+    background-color: gray;
   } 
 .sidenav a:active {
     background-color: black;
