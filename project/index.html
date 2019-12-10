@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <style>
-        
-       
     </style> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(".btn1").click(function(){
+        $("h2").slideUp();
+      });
+      $(".btn2").click(function(){
+        $("h2").slideDown();
+      });
+    });
+    </script>
 </head>
 <body>
     <div id="banner"><h1>Top 11 Major US Battles</h1>
@@ -57,8 +66,8 @@
             </li>
         </ul> 
     </div>
-    <div style="margin:auto; width:100%">
-        <h1 id="caption" style="color:goldenrod; ">
+    <div style="margin:auto; width:80%">
+        <h2 id="caption" style="color:goldenrod; ">
         <p>The goal of this educational website is for any history enthusiast and curious minds that want to know 
             the most important and consequential battles in United States history.</p>
         <p>The United States has been in numerous conflicts but these eleven battles have shaped American 
@@ -66,7 +75,9 @@
         <p> In order to look to our present and future, we have to look at our past. With these battles, 
             I hope to give a glimpse of insight into where the United States came from and how to prevent 
             the same mistakes from happening again in the future.</p>
-       </h1>
+       </h2>
+       <button class="btn1">Slide up</button>
+        <button class="btn2">Slide down</button>
 
     </div>
     <div id="footer"><hr>&copy;2019 ADIT1340 Boston College, Byungmoo Brian Kim
